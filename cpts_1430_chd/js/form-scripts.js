@@ -20,9 +20,9 @@ function submitForm(){
 
     $.ajax({
         type: "POST",
-        url: "http://121.41.229.179:8081/message.posts",
+        url: "http://121.41.229.179:8081/message/posts",
         data: { name:$("#name").val(),email:$("#email").val(),subject:$("#subject").val(),message:$("#message").val()},
-        contentType: "application/json; charset=utf-8",
+        //contentType: "application/json; charset=utf-8",
         success : function(data){
             if (data == "news"){
                 formSuccess();

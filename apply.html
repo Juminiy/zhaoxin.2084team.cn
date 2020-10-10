@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+
+<head>
+    <title>编译器方向</title>
+    <link rel="icon" type="image/png" sizes="144x144" href="./assets/images/main/2084team.jpg"/>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Animation -->
+	<link rel="stylesheet" href="./assets/css/animate.css">
+	<!-- prettyphoto -->
+	<!-- Bootsrap modal -->
+	<link rel="stylesheet" href="./assets/css/bootstrap-modal-carousel.css">
+	<!-- Custom CSS -->
+	<link href="./assets/css/theme.css" rel="stylesheet">
+	<!-- Responsive styles-->
+	<link rel="stylesheet" href="./assets/css/responsive.css">
+	<!-- Custom Fonts -->
+	<!-- FontAwesome -->
+	<link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+	<!-- Elegant icon font -->
+	<link rel="stylesheet" href="./assets/css/line-icons.min.css">
+
+	
+	
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top">
+       
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
+                
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <!--
+                
+            -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="index.html#section-main" class="page-scroll">主页</a></li>
+                    <li><a class="page-scroll" href="index.html#section-about">关于我们</a></li>
+                    <li><a class="page-scroll" href="index.html#section-plan">招收方向</a></li>
+                    <!--
+                    <li><a class="page-scroll" href="#section-portfolio">portfolio</a></li>
+                    -->
+                    <li><a class="page-scroll" href="#section-contact">立即申请</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+      
+    </nav>
+<!-- navbar end -->
+<!-- section apply start -->
+<section id="section-apply" class="section-padding">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="section-heading text-center">
+					<p> 你想加入我们吗 ？ </p>
+					<h2>联系我们</h2>
+				</div>
+			</div>
+		</div>
+		<!--  row heading end -->
+		<div class="row">
+			<div class="col-md-4">
+				<ul class="contact-info">
+					<li class="info-block">
+						<div class="icon-block">
+							<i class="fa fa-qq"></i>
+						</div>
+						<h4>QQ 群</h4>
+						<p>QQ: 1147163275 </p>
+					</li>
+					<li class="info-block">
+						<div class="icon-block">
+							<i class="icon icon-envelope"></i>
+						</div>
+						<h4>邮箱</h4>
+						<p>Email: zhaoxin@xiyuan.ren</p>
+						
+					</li>
+					<li class="info-block">
+						<div class="icon-block">
+							<i class="icon icon-map"></i>
+						</div>
+						<h4>Find us</h4>
+						<p>南校区 科技楼9015 </p>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-md-8  wow fadeInRight">
+				<div class="contact-box">
+					<form id="contactForm" data-toggle="validator" method="post" action="">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" id="name" name="name" class="form-control" placeholder="这里填你的大名" required data-error="大声说出你的姓名">
+								<div class="help-block with-errors"></div>
+							</div>
+                        </div>
+                        <div class="col-md-6">
+							<div class="form-group">
+								<input type="text" name="id_num" id="id_num" class="form-control" placeholder="你的学号" required data-error="需要你的学号">
+								<div class="help-block with-errors"></div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="email" name="email" id="email" class="form-control" placeholder="你的邮箱" required data-error="需要你的邮箱">
+								<div class="help-block with-errors"></div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<input type="text" name="subject" id="qq" class="form-control" placeholder="你的QQ" required data-error="需要你的QQ">
+								<div class="help-block with-errors"></div>
+							</div>
+                        </div>
+                        <div class="col-md-6">
+							<div class="form-group">
+								<input type="text" name="major" id="major" class="form-control" placeholder="你的学院和专业" required data-error="需要你的学院和专业">
+								<div class="help-block with-errors"></div>
+							</div>
+                        </div>
+                        <div class="col-md-6">
+							<div class="form-group">
+                                <input type="text" name="postion" id="postion" class="form-control" placeholder="你选择的方向" required data-error="请填写你的方向">
+								<div class="help-block with-errors"></div>
+							</div>
+                        </div>
+						<div class="col-md-12">
+							<div class="form-group">
+								<textarea id="message" name="message" cols="30" rows="10" class="textarea-block form-control" placeholder="介绍一下你自己" required data-error="你还没介绍你自己呢！"></textarea>
+								<div class="help-block with-errors"></div>
+							</div>
+						</div>
+						<div class="col-md-12  text-right wow fadeInUp text-center">
+							<button class="btn btn-black " id="submit" value="Submit" onclick="submitForm()">填好以后点击这里加入我们！</button>
+							<div id="msgSubmit" class="h3 text-center hidden"></div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- row end -->
+	</div>
+	<!-- container end -->
+</section>
+<!-- section contact end -->
+<!--  Footer start  -->
+<section id="footer" class="section-padding ">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+				<div class="footer-widget">
+					<!--						<img src="assets/img/logo.png" alt="" class="img-responsive"> -->
+					<h2>2084 Team</h2>
+					<p>我们建立了一个基于学生创新创业为主体的技术团队，以技术为思想，获奖为意志，让我们共同进步！</p>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="footer-widget">
+					<h3>友情链接</h3>
+					<ul>
+						<li><a href="https://www.neuq.edu.cn/"><i class="fa  fa-angle-right"></i> NEUQ 官网</a></li>
+						<li><a href="http://jsjytx.neuq.edu.cn/"><i class="fa  fa-angle-right"></i> NEUQ计工学院 </a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="footer-widget tags">
+	
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!--  Footer end  -->
+
+<!-- section footer strat -->
+<footer id="section-footer" >
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="footer-content">
+					<h4 class="wow fadeInUp">Copyright &copy; 2084Team , All Rights Reserve   |技术维护：@sfz | 邮箱 2084@2084team.cn |科技楼9015
+                    </h4>
+				</div>
+			</div>
+
+		</div><!-- row end  -->
+	</div><!-- container end  -->
+</footer>
+<!-- section contact address end -->
+</body>
+
+<!-- jQuery -->
+<script src="./assets/js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="./assets/js/bootstrap.min.js"></script>
+<!-- form validation -->
+<script type="text/javascript" src="./assets/js/validator.min.js"></script>
+<script type="text/javascript" src="./assets/js/form-scripts.js"></script>
+<!-- Plugin JavaScript -->
+<script src="./assets/js/jquery.easing.min.js"></script>
+<!-- isotope -->
+<script type="text/javascript" src="./assets/js/jquery.isotope.js"></script>
+<!-- Waypoints -->
+<script type="text/javascript" src="./assets/js/jquery.waypoints.min.js"></script>
+<!-- Wow Animation -->
+<script type="text/javascript" src="./assets/js/wow.min.js"></script>
+<!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+<!-- Custom Theme JavaScript -->
+<script src="./assets/js/theme.js"></script>
+</html>

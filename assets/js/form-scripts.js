@@ -12,19 +12,12 @@ $("#contactForm").validator().on("submit", function (event) {
 
 
 function submitForm(){
-    // Initiate Variables With Form Content
-    var name = $("#name").val();
-    var email = $("#email").val();
-    var subject = $("#subject").val();
-    var message = $("#message").val();
-
     $.ajax({
-        type: "POST",
-        url: "http://121.41.229.179:8081/message/posts",
-        data: { name:$("#name").val(),email:$("#email").val(),subject:$("#subject").val(),message:$("#message").val()},
-        //contentType: "application/json; charset=utf-8",
+        type: "post",
+        url: "https://hulingnan.site:8125/message/post/recruitment",
+        data: { name:$("#name").val(),id_num:$("#id_num").val(),email:$("#email").val(),qq:$("#qq").val(),major:$("#major").val(),position:$("#position").val(),message:$("#message").val()},
         success : function(data){
-            if (data == "news"){
+            if (data.val() == "ok"){
                 formSuccess();
             } else {
                 formError();

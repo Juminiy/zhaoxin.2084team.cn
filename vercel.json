@@ -14,6 +14,6 @@
     { "src": "/assets/404/css/", "status": 404, "dest": "/404.html" },
     { "src": "/assets/404/fonts/", "status": 404, "dest": "/404.html"},
     { "src": "/assets/404/fonts/roboto/", "status": 404, "dest": "/404.html" },
-    { "src": "/assets/404/js", "status": 404, "dest": "/404.html" },
+    { "src": "/assets/404/js", "status": 404, "dest": "/404.html" }
   ]
   }

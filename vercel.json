@@ -9,11 +9,11 @@
     { "src": "/assets/images/portfolio/", "status": 404, "dest": "/404.html" },
     { "src": "/assets/images/main/", "status": 404, "dest": "/404.html" },
     { "src": "/assets/images/bg/", "status": 404, "dest": "/404.html" },
-    { "src": "/assets/js", "status": 404, "dest": "/404.html" },
+    { "src": "/assets/js/", "status": 404, "dest": "/404.html" },
     { "src": "/assets/404/", "status": 404, "dest": "/404.html" },
     { "src": "/assets/404/css/", "status": 404, "dest": "/404.html" },
     { "src": "/assets/404/fonts/", "status": 404, "dest": "/404.html"},
     { "src": "/assets/404/fonts/roboto/", "status": 404, "dest": "/404.html" },
-    { "src": "/assets/404/js", "status": 404, "dest": "/404.html" }
+    { "src": "/assets/404/js/", "status": 404, "dest": "/404.html" }
   ]
   }

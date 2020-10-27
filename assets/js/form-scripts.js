@@ -2,7 +2,7 @@ $("#contactForm").validator().on("submit", function (event) {
     if (event.isDefaultPrevented()) {
         // handle the invalid form...
         formError();
-        submitMSG(false, "Did you fill in the form properly?");
+        submitMSG(false, "请确认是否填写正确?");
     } else {
         // everything looks good!
         event.preventDefault();
@@ -16,12 +16,13 @@ function submitForm(){
         type: "post",
         url: "https://apih.2084team.cn:8125/message/post/recruitment",
         data: { name:$("#name").val(),id_num:$("#id_num").val(),email:$("#email").val(),qq:$("#qq").val(),major:$("#major").val(),position:$("#position").val(),message:$("#message").val()},
-        success : function(data){
-            if (data.val() == "ok"){
+        success : function(result){
+             
+            if (result== "ok"){
                 formSuccess();
             } else {
                 formError();
-                submitMSG(false,text);
+                submitMSG(false,"未知错误");
             }
         }
     });
@@ -29,7 +30,7 @@ function submitForm(){
 
 function formSuccess(){
     $("#contactForm")[0].reset();
-    submitMSG(true, "Message has been Submitted!")
+    submitMSG(true, "你的信息我们已经收到!")
 }
 
 function formError(){

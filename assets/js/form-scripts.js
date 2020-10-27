@@ -14,7 +14,7 @@ $("#contactForm").validator().on("submit", function (event) {
 function submitForm(){
     $.ajax({
         type: "post",
-        url: "https://hulingnan.site:8125/message/post/recruitment",
+        url: "https://apih.2084team.cn:8125/message/post/recruitment",
         data: { name:$("#name").val(),id_num:$("#id_num").val(),email:$("#email").val(),qq:$("#qq").val(),major:$("#major").val(),position:$("#position").val(),message:$("#message").val()},
         success : function(data){
             if (data.val() == "ok"){

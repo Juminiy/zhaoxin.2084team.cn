@@ -1,0 +1,16 @@
+{
+  "name": "minHtml",
+  "version": "1.0.0",
+  "description": "Minify html",
+  "main": "minHtml.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node minHtml.js"
+  },
+  "author": "czq",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "html-minifier": "^3.5.21"
+  }
+}

@@ -8,8 +8,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="2084team">
+    <meta name="author" content="Juminiy">
     
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Animation -->
@@ -103,18 +103,46 @@
 								<div class="help-block with-errors"></div>
 							</div>
                         </div>
+
+                        <!-- 添加滚轮 -->
+<!--                        <div class="col-md-6">-->
+<!--							<div class="form-group">-->
+<!--								<input type="text" name="major" id="major" class="form-control" placeholder="你的学院和专业" required data-error="请填写你的学院和专业">-->
+<!--								<div class="help-block with-errors"></div>-->
+<!--							</div>-->
+<!--                        </div>-->
                         <div class="col-md-6">
-							<div class="form-group">
-								<input type="text" name="major" id="major" class="form-control" placeholder="你的学院和专业" required data-error="请填写你的学院和专业">
-								<div class="help-block with-errors"></div>
-							</div>
+                            <div class="form-group">
+                                <label for="major"> 你的学院和专业 </label>
+                                <select class="form-control" id="major" name="major">
+                                    <option>请选择你的专业</option>
+                                    <option>计算机科学与技术</option>
+                                    <option>电子信息类</option>
+                                    <option>控制工程学院</option>
+                                    <option>其他专业</option>
+                                </select>
+                                <br>
+                                <div class="help-block with-errors"></div>
+                            </div>
                         </div>
                         <div class="col-md-6">
 							<div class="form-group">
-                                <input type="text" name="position" id="position" class="form-control" placeholder="你选择的方向" required data-error="请填写你感兴趣的方向">
-								<div class="help-block with-errors"></div>
+<!--                                <input type="text" name="position" id="position" class="form-control" placeholder="你选择的方向" required data-error="请填写你感兴趣的方向">-->
+                                <label for="position"> 你感兴趣的方向 </label>
+                                <select class="form-control" id="position" name="position" >
+                                    <option>请选择你的方向</option>
+                                    <option>编译原理研究</option>
+                                    <option>应用开发小组</option>
+                                    <option>操作系统</option>
+                                    <option>我很强，都能做，可以全栈和算法兼顾</option>
+<!--                                    <option>我很弱，什么都不会，但是我有兴趣</option>-->
+                                </select>
+                                <br>
+                                <div class="help-block with-errors"></div>
 							</div>
                         </div>
+
+
 						<div class="col-md-12">
 							<div class="form-group">
 								<textarea id="message" name="message" cols="30" rows="10" class="textarea-block form-control" placeholder="介绍一下你自己吧" required data-error="你还没介绍你自己呢！"></textarea>
@@ -190,4 +218,10 @@
 <script type="text/javascript" src="./assets/js/theme.min.js"></script>
 <script type="text/javascript" src="./assets/js/czq.min.js"></script>
 <script type="text/javascript" src="/assets/js/b.js"></script>
+
+
+<!-- dependency of bootstrap framework scroll action move with mouse goes -->
+<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+<script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </html>
